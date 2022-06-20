@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/buyFragment"
+        android:icon="@drawable/buy_icon"
+        android:title="Satın Al"
+        />
+    <item
+        android:id="@+id/viewFragment"
+        android:icon="@drawable/view_icon"
+        android:title="İzlenme" />
+    <item
+        android:id="@+id/likeFragment"
+        android:icon="@drawable/like_icon"
+        android:title="Beğeni" />
+    <item
+        android:id="@+id/followFragment"
+        android:icon="@drawable/follow_icon"
+        android:title="Takipçi" />
+</menu>
