@@ -8,7 +8,13 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/forlike/app/src/main/res/drawable/like_icon.xml" value="0.191" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/forlike/app/src/main/res/drawable/view_icon.xml" value="0.191" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/forlike/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/forlike/app/src/main/res/layout/drawer_header.xml" value="0.365625" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/forlike/app/src/main/res/layout/fragment_buy.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/forlike/app/src/main/res/layout/fragment_follow.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/forlike/app/src/main/res/layout/fragment_like.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/forlike/app/src/main/res/layout/fragment_view.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/forlike/app/src/main/res/menu/bottom_menu.xml" value="0.365625" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/forlike/app/src/main/res/menu/draver_menu.xml" value="0.365625" />
       </map>
     </option>
   </component>
