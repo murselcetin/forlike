@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/history_icon"
+        android:title="GEÇMİŞ" />
+    <item
+        android:icon="@drawable/privacy_icon"
+        android:title="GİZLİLİK" />
+    <item
+        android:icon="@drawable/free_icon"
+        android:title="ÜCRETSİZ" />
+    <item
+        android:icon="@drawable/hashtag_icon"
+        android:title="HASHTAG" />
+    <item
+        android:icon="@drawable/support_icon"
+        android:title="DESTEK" />
+    <item
+        android:icon="@drawable/coupon_icon"
+        android:title="KUPON GİR" />
+</menu>
