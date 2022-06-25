@@ -21,7 +21,7 @@
             android:background="?attr/colorPrimary"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
-            app:layout_constraintBottom_toTopOf="@id/fragmentContainerView"
+            app:layout_constraintBottom_toTopOf="@id/header"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -32,12 +32,95 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/titan_one"
                 android:text="@string/app_name"
-                android:textColor="@color/white"
+                android:textColor="@color/background"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="165dp"
                 tools:layout_editor_absoluteY="12dp" />
         </androidx.appcompat.widget.Toolbar>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/purple2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <ImageView
+                android:id="@+id/creditIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/credit_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/moneyboxIcon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/creditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="10000"
+                android:textStyle="bold"
+                android:textColor="@color/orange2"
+                app:layout_constraintEnd_toEndOf="@+id/creditIcon"
+                app:layout_constraintStart_toStartOf="@+id/creditIcon"
+                app:layout_constraintTop_toBottomOf="@id/creditIcon" />
+
+            <ImageView
+                android:id="@+id/moneyboxIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/moneybox_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/adsIcon"
+                app:layout_constraintStart_toEndOf="@id/creditIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/moneyboxText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="10000"
+                android:textColor="@color/orange2"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/moneyboxIcon"
+                app:layout_constraintStart_toStartOf="@+id/moneyboxIcon"
+                app:layout_constraintTop_toBottomOf="@id/moneyboxIcon" />
+
+            <ImageView
+                android:id="@+id/adsIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="50dp"
+                android:src="@drawable/ads_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/moneyboxIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/adsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="ÜCRETSİZ"
+                android:textStyle="bold"
+                android:textColor="@color/orange2"
+                app:layout_constraintEnd_toEndOf="@+id/adsIcon"
+                app:layout_constraintStart_toStartOf="@+id/adsIcon"
+                app:layout_constraintTop_toBottomOf="@id/adsIcon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavView"
@@ -60,9 +143,8 @@
             app:defaultNavHost="true"
             app:layout_constraintBottom_toTopOf="@+id/bottomNavView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            app:layout_constraintTop_toBottomOf="@+id/header"
             app:navGraph="@navigation/main_nav" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -73,7 +155,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:menu="@menu/drawer_menu"
-        app:itemShapeFillColor="@color/black"
-        app:itemTextColor="@color/white"
-        app:itemIconTint="@color/white" />
+        app:itemShapeFillColor="@color/purple2"
+        app:itemTextColor="@color/orange1"
+        app:itemIconTint="@color/orange2" />
 </androidx.drawerlayout.widget.DrawerLayout>
